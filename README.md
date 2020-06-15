@@ -17,9 +17,9 @@ and too start off I reccomend doing this:
         create(300, 0, 50, 50, "green", false)
     }
 
-setInterval(function(){ -- A loop to keep the green block falling
-    fall(1, 0) -- fall function
-}, 5);
+    setInterval(function(){ -- A loop to keep the green block falling
+        fall(1, 0) -- fall function
+    }, 5);
 
 all functions: 
 
