@@ -14,6 +14,9 @@ function fall(index, index2){
     if (part.y != top){
         remove(part)
         update(part.x, part.y + 1, part.h, part.w, part.static, part.color, index)
+    }else if(part.x - part.w/2 > collide.x + collide.w/2 || part.x + part.w/2 < collide.x - collide.w/2 ) {
+        remove(part)
+        update(part.x, part.y + 1, part.h, part.w, part.static, part.color, index)
     }
 }
 function remove(part){
