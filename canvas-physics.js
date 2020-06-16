@@ -23,10 +23,10 @@ function remove(part){
     ctx.fillStyle = canvasColor
     ctx.fillRect(part.x, part.y, part.h, part.w)
 }
-function create(a,b,c,d,col,stat){ // a=x, b=y, c=w, d=h
+function create(x,y,w,h,col,stat){ // a=x, b=y, c=w, d=h
     ctx.fillStyle = col
-    ctx.fillRect(a, b, c, d)
-    objects.push({x:a, y:b, h:c, w:d, static:stat, color:col})
+    ctx.fillRect(x, y, w, h)
+    objects.push({x:x, y:y, w:w, h:h, static:stat, color:col})
 }
 
 function update(a,b,c,d,col,stat, index){
