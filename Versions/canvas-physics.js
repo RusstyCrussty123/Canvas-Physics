@@ -3,6 +3,7 @@
 // DISCORD: RusstyCrussty#0093
 // DISCORD SERVER: https://discord.gg/SefNTcM
 // READ README.md TOO KNOW HOW TOO USE
+// V1
 
 var objects = []
 var canvasColor = "black"
