@@ -7,6 +7,7 @@ Please report bugs to issues!
 Version: BETA 1.1
 Stable: False
 */
+
 // {x, y, w, h, col}
 
 var objects = [];
