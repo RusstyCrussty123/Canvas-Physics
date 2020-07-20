@@ -23,48 +23,12 @@ var chunk = 1;
 var lastChunk = 1;
 var chunkloc = 10;
 
-window.onload = function(){
-    makeCanvas(600, 600, "#0066ff", "canvas");
-    
-    fetch("map.json").then(response => response.json()).then(data => {
-      for (var i = 0; i <= data.length - 1; i++){
-        var child = data[i]
-        create(child.x, child.y, child.w, child.h, child.color);
-        console.log(child)
-      }  
-    });
-  
-    /*
-    create(0, 200, 50, 50, "blue");
-    // GROUND
-    create(0, 300, 100, 50, "green");
-    create(100, 350, 100, 50, "green");
-    create(200, 300, 100, 50, "green");
-    create(300, 250, 100, 50, "green");
-    */
-}
-
-setInterval(function(){
-    getChunk(0)
-    if (!objects[chunk]){
-        fall(0, lastChunk)
-    }else{
-        fall(0, chunk)
-        console.log(chunkloc)
-    }
-    if (slowMode == false) {
-        render();
-    }
-}, speed)
-
 function render(){
     for (var i = 0; i < objects.length; i++){
         var obj = objects[i]
         update(obj.x, obj.y, obj.w, obj.h, obj.color, i);
     }
 }
-
-console.log(0 - 1)
 
 function getChunk(index){
     document.getElementById("chunk").innerHTML = "Chunk: "+chunk
