@@ -3,6 +3,8 @@ A really simple physics engine for canvas's
 
 This is super simple and have too admit really bad but it works so yeah
 
+**This has been discontinoued, I will be rewriting the whole thing because the first time I made this I had no idea what I was doing**
+
 # How to use
 first add the script in with a <script src="canvas-physics.js"></script> and then create another script below it: <script src="index.js"></script>
 
